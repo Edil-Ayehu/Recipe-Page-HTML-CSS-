@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Haramiro's Recipes</title>
+    <title>LUCKY's Recipes</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,17 +14,19 @@
   </head>
   <body>
     <div class="container">
+      <!-- Navigation Bar -->
       <nav class="navbar">
-        <div class="logo">HARAMIRO'S</div>
+        <div class="logo">LUCKY</div>
         <div class="nav-links">
           <a href="#" class="active">Home</a>
-          <a href="#">Recipes</a>
-          <a href="#">Blogs</a>
-          <a href="#">Gallery</a>
+          <a href="#recipes">Recipes</a>
+          <a href="#blogs">Blogs</a>
+          <a href="#gallery">Gallery</a>
         </div>
         <button class="download-btn">Download App</button>
       </nav>
 
+      <!-- Hero Section -->
       <section class="hero">
         <div class="hero-content">
           <h1>Discover Simple, Delicious, And <span>Fast Recipes!</span></h1>
@@ -51,7 +53,8 @@
         </div>
       </section>
 
-      <section class="recipes-section">
+      <!-- Recipes Section -->
+      <section id="recipes" class="recipes-section">
         <div class="section-header">
           <h2>Recipes</h2>
           <div class="search-sort">
@@ -90,6 +93,7 @@
         </div>
 
         <div class="recipe-cards">
+          <!-- Recipe Card 1 -->
           <div class="recipe-card">
             <img
               src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd"
@@ -100,23 +104,24 @@
               <div class="recipe-meta">
                 <div class="chef">
                   <span>👨‍🍳</span>
-                  <span>Chef Ming</span>
+                  <span>John Doe</span>
                 </div>
                 <div class="time">
                   <span>⏱️</span>
-                  <span>15-20 min</span>
+                  <span>15 min</span>
                 </div>
               </div>
               <div class="rating">
-                <span class="stars">★★★★★</span>
-                <span class="rating-value">4.8</span>
+                <div class="stars">★★★★★</div>
+                <span>5.0 (2.3k)</span>
               </div>
             </div>
           </div>
 
+          <!-- Recipe Card 2 -->
           <div class="recipe-card">
             <img
-              src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40"
+              src="https://images.unsplash.com/photo-1547592166-23ac45744acd"
               alt="Russian Salad"
             />
             <div class="recipe-info">
@@ -124,61 +129,75 @@
               <div class="recipe-meta">
                 <div class="chef">
                   <span>👨‍🍳</span>
-                  <span>Chef Ming</span>
+                  <span>Maria Smith</span>
                 </div>
                 <div class="time">
                   <span>⏱️</span>
-                  <span>15-20 min</span>
+                  <span>30 min</span>
                 </div>
               </div>
               <div class="rating">
-                <span class="stars">★★★★★</span>
-                <span class="rating-value">4.6</span>
+                <div class="stars">★★★★☆</div>
+                <span>4.8 (1.2k)</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Trending Recipes Section -->
       <section class="trending-section">
         <h2>Trending Recipes</h2>
         <div class="trending-cards">
           <div class="trending-card">
-            <div class="card-badge">Best Seller</div>
             <img
-              src="https://images.unsplash.com/photo-1547592180-85f173990554"
+              src="https://images.unsplash.com/photo-1551218808-94e220e084d2"
               alt="Dinner Salad"
             />
-            <h3>Dinner Salad</h3>
-            <p>Vegetable mix with quinoa seasoning and dressing</p>
+            <div class="trending-info">
+              <h3>Dinner Salad</h3>
+              <p>Healthy dinner salad with avocado and seeds</p>
+            </div>
           </div>
           <div class="trending-card">
             <img
-              src="https://images.unsplash.com/photo-1587314168485-3236d6710814"
+              src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e"
               alt="Angel Food Cake"
             />
-            <h3>Angel Food Cake</h3>
+            <div class="trending-info">
+              <h3>Angel Food Cake</h3>
+              <p>Light and fluffy cake with berries</p>
+            </div>
           </div>
           <div class="trending-card">
             <img
-              src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8"
-              alt="Chinese Noodles"
+              src="https://images.unsplash.com/photo-1563805042-7684c019e1cb"
+              alt="Kimchi Fried Rice"
             />
-            <h3>Chinese Noodles</h3>
+            <div class="trending-info">
+              <h3>Kimchi Fried Rice</h3>
+              <p>Spicy Korean-style fried rice with kimchi</p>
+            </div>
           </div>
           <div class="trending-card">
             <img
-              src="https://images.unsplash.com/photo-1570197571499-166b36435e9f"
+              src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6"
               alt="Tomato Cucumber Salad"
             />
-            <h3>Tomato Cucumber Salad</h3>
+            <div class="trending-info">
+              <h3>Tomato Cucumber Salad</h3>
+              <p>Fresh summer salad with tomatoes and cucumbers</p>
+            </div>
           </div>
           <div class="trending-card">
             <img
-              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
-              alt="Homemade Salad"
+              src="https://images.unsplash.com/photo-1563805042-7684c019e1cb"
+              alt="Homemade Cake"
             />
-            <h3>Homemade Salad</h3>
+            <div class="trending-info">
+              <h3>Homemade Cake</h3>
+              <p>Delicious homemade cake with chocolate</p>
+            </div>
           </div>
         </div>
         <div class="slider-controls">
@@ -187,6 +206,7 @@
         </div>
       </section>
 
+      <!-- Testimonials Section -->
       <section class="testimonial-section">
         <h2>What They Say</h2>
         <div class="testimonial-container">
@@ -214,7 +234,8 @@
         </div>
       </section>
 
-      <section class="blog-section">
+      <!-- Blog Section -->
+      <section id="blogs" class="blog-section">
         <h2>Our Blog</h2>
         <div class="blog-cards">
           <div class="blog-card">
@@ -241,7 +262,8 @@
         </button>
       </section>
 
-      <section class="gallery-section">
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery-section">
         <h2>Gallery</h2>
         <div class="gallery-grid">
           <div class="gallery-item large">
@@ -271,6 +293,7 @@
         </div>
       </section>
 
+      <!-- App Download Section -->
       <section class="app-download">
         <div class="app-content">
           <h2>Download Our App</h2>
@@ -301,10 +324,11 @@
         </div>
       </section>
 
+      <!-- Footer -->
       <footer>
         <div class="footer-content">
           <div class="footer-logo">
-            <h3>HARAMIRO'S</h3>
+            <h3>LUCKY</h3>
             <p>
               We provide a variety of unique recipes from professional chefs for
               you to learn and cook easily.
@@ -345,13 +369,13 @@
               <h4>Get In Touch</h4>
               <ul>
                 <li>123 Street, City, Country</li>
-                <li>haramiro@gmail.com</li>
+                <li>lucky@gmail.com</li>
               </ul>
             </div>
           </div>
         </div>
         <div class="copyright">
-          <p>©2023 Haramiro's, Inc. All Rights Reserved.</p>
+          <p>©2023 LUCKY, Inc. All Rights Reserved.</p>
         </div>
       </footer>
     </div>

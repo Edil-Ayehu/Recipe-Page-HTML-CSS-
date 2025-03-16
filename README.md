@@ -1,8 +1,8 @@
-# Haramiro's Recipe Website
+# LUCKY's Recipe Website
 
 A modern, responsive recipe website featuring a clean design, intuitive navigation, and a variety of recipe collections.
 
-![Haramiro's Recipe Website](https://images.unsplash.com/photo-1581299894007-aaa50297cf16)
+![LUCKY's Recipe Website](https://images.unsplash.com/photo-1581299894007-aaa50297cf16)
 
 ## Features
 
@@ -25,7 +25,7 @@ A modern, responsive recipe website featuring a clean design, intuitive navigati
 - Responsive design principles
 
 ## Project Structure
-haramiros-recipe-website/
+lucky-recipe-website/
 |--index.html # Main HTML file
 |--styles.css # CSS styles
 |--README.md # Project documentation
@@ -34,7 +34,7 @@ haramiros-recipe-website/
 
 1. Clone the repository:
 
-git clone clone https://github.com/yourusername/haramiros-recipe-website.git
+git clone clone https://github.com/yourusername/lucky-recipe-website.git
 
 2. Open `index.html` in your browser to view the website.
 
