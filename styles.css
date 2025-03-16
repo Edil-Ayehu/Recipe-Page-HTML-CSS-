@@ -703,24 +703,28 @@ button {
 .app-download {
   display: flex;
   align-items: center;
-  background-color: #fff5f5;
+  background: linear-gradient(120deg, #f8f9fa 0%, #e9ecef 100%);
   border-radius: var(--border-radius);
   padding: 60px;
   margin-bottom: 80px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
 }
 
 .app-content {
   flex: 1;
+  padding-right: 40px;
 }
 
 .app-content h2 {
-  font-size: 28px;
+  font-size: 32px;
   margin-bottom: 20px;
+  color: var(--secondary-color);
 }
 
 .app-content p {
   margin-bottom: 30px;
-  max-width: 400px;
+  color: var(--dark-gray);
 }
 
 .app-buttons {
@@ -729,22 +733,30 @@ button {
 }
 
 .app-buttons a {
-  height: 50px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.app-buttons a:hover {
+  transform: translateY(-5px);
 }
 
 .app-buttons img {
-  height: 100%;
+  height: 40px;
+  width: auto;
 }
 
 .app-image {
   flex: 1;
+  position: relative;
   display: flex;
   justify-content: center;
 }
 
 .app-image img {
-  max-height: 400px;
-  object-fit: contain;
+  max-height: 500px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 /* ==================== Footer ==================== */
@@ -1148,5 +1160,96 @@ section[id] {
 
   .tips-content {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ==================== App Download Section Responsive Styles ==================== */
+@media (max-width: 1024px) {
+  .app-download {
+    padding: 40px 30px;
+  }
+  
+  .app-content {
+    padding-right: 20px;
+  }
+  
+  .app-content h2 {
+    font-size: 28px;
+  }
+  
+  .app-image img {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-download {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+  
+  .app-content {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+  }
+  
+  .app-buttons {
+    justify-content: center;
+  }
+  
+  .app-image {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  .app-image img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-download {
+    padding: 30px 15px;
+    margin-bottom: 50px;
+  }
+  
+  .app-content h2 {
+    font-size: 24px;
+  }
+  
+  .app-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .app-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .app-buttons a {
+    width: 80%;
+    max-width: 200px;
+  }
+  
+  .app-buttons img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .app-image {
+    max-width: 100%;
+  }
+  
+  .app-image img {
+    max-width: 100%;
+    border-radius: 12px;
   }
 }
