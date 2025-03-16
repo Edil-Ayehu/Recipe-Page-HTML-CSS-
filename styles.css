@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-
 :root {
   --primary-color: #ff4b4b;
   --secondary-color: #333;
@@ -116,7 +115,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+  background: url("https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
   background-size: cover;
   background-position: center;
   opacity: 0.04;
@@ -152,7 +151,6 @@ button {
   color: var(--secondary-color);
   letter-spacing: -1px;
 }
-
 
 .hero h1 .highlight {
   color: var(--primary-color);
@@ -312,7 +310,8 @@ button {
   background: white;
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
   max-width: 250px;
   z-index: 10;
   transition: transform 0.3s ease;
@@ -805,19 +804,19 @@ footer {
 
 /* Individual social icon colors on hover */
 .social-icons a:nth-child(1):hover {
-  background-color: #E1306C; /* Instagram color */
+  background-color: #e1306c; /* Instagram color */
 }
 
 .social-icons a:nth-child(2):hover {
-  background-color: #4267B2; /* Facebook color */
+  background-color: #4267b2; /* Facebook color */
 }
 
 .social-icons a:nth-child(3):hover {
-  background-color: #1DA1F2; /* Twitter color */
+  background-color: #1da1f2; /* Twitter color */
 }
 
 .social-icons a:nth-child(4):hover {
-  background-color: #E60023; /* Pinterest color */
+  background-color: #e60023; /* Pinterest color */
 }
 
 .footer-links {
@@ -863,42 +862,42 @@ footer {
     grid-template-columns: 1fr;
     min-height: auto;
   }
-  
+
   .hero-content {
     padding: 60px 40px;
     text-align: center;
   }
-  
+
   .hero p {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .hero-buttons {
     justify-content: center;
   }
-  
+
   .hero-stats {
     justify-content: center;
   }
-  
+
   .hero-image {
     height: 400px;
     position: relative;
   }
-  
+
   .hero-image img {
     position: relative;
     border-radius: 0 0 24px 24px;
   }
-  
+
   .floating-card {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   .floating-card:hover {
     transform: translateX(-50%) translateY(-10px);
   }
@@ -908,32 +907,39 @@ footer {
   .hero {
     margin: 30px 0 70px;
   }
-  
+
   .hero-content {
     padding: 50px 30px;
   }
-  
+
   .hero h1 {
     font-size: 2.5rem;
   }
-  
+
   .hero p {
     max-width: 100%;
     font-size: 16px;
   }
-  
+
   .hero-buttons {
     flex-direction: column;
     gap: 15px;
   }
-  
+
   .hero-stats {
     flex-wrap: wrap;
     gap: 20px;
   }
-  
+
   .hero-image {
     height: 300px;
+  }
+
+  .floating-card {
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
   }
 }
 
@@ -941,21 +947,28 @@ footer {
   .hero {
     margin: 20px 0 50px;
   }
-  
+
   .hero-content {
     padding: 40px 20px;
   }
-  
+
   .hero h1 {
     font-size: 2rem;
   }
-  
+
   .hero-image {
     height: 250px;
   }
-  
+
   .floating-card {
     max-width: 200px;
+    bottom: -40px;
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .hero {
+    margin-bottom: 70px;
   }
 }
 
