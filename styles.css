@@ -153,6 +153,7 @@ button {
   letter-spacing: -1px;
 }
 
+
 .hero h1 .highlight {
   color: var(--primary-color);
   position: relative;
@@ -793,6 +794,30 @@ footer {
   text-decoration: none;
   color: var(--white);
   font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual social icon colors on hover */
+.social-icons a:nth-child(1):hover {
+  background-color: #E1306C; /* Instagram color */
+}
+
+.social-icons a:nth-child(2):hover {
+  background-color: #4267B2; /* Facebook color */
+}
+
+.social-icons a:nth-child(3):hover {
+  background-color: #1DA1F2; /* Twitter color */
+}
+
+.social-icons a:nth-child(4):hover {
+  background-color: #E60023; /* Pinterest color */
 }
 
 .footer-links {
